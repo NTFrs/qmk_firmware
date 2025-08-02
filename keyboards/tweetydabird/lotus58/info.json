@@ -18,7 +18,7 @@
     },
     "rgblight": {
         "default": {
-            "val": 87
+            "val": 127
         },
         "led_count": 70,
         "max_brightness": 175,

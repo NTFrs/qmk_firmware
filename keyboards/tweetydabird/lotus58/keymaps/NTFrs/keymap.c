@@ -5,11 +5,11 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        QK_GESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_MPLY,        KC_MUTE, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS,
-        KC_GRV,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC,
-        KC_TAB,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                             KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-        LCTL_T(KC_LEFT), KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_UP,        KC_DOWN,   KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, RCTL_T(KC_RGHT),
-                                   KC_LGUI, KC_LALT,TT(2), LSFT_T(KC_SPC), RSFT_T(KC_ENT), TT(1),   KC_RALT, KC_BSPC
+        QK_GESC,         KC_1, KC_2,    KC_3,    KC_4,  KC_5,        KC_MPLY,        KC_MUTE,  KC_6,    KC_7, KC_8,    KC_9,   KC_0,    KC_MINS,
+        KC_GRV ,         KC_Q, KC_W,    KC_E,    KC_R,  KC_T,                                  KC_Y,    KC_U, KC_I,    KC_O,   KC_P,    KC_LBRC,
+        KC_TAB ,         KC_A, KC_S,    KC_D,    KC_F,  KC_G,                                  KC_H,    KC_J, KC_K,    KC_L,   KC_SCLN, KC_QUOT,
+        LCTL_T(KC_LEFT), KC_Z, KC_X,    KC_C,    KC_V,  KC_B,        KC_DOWN,          KC_UP,  KC_N,    KC_M, KC_COMM, KC_DOT, KC_SLSH, RCTL_T(KC_RGHT),
+                                     KC_LGUI, KC_LALT, TT(2), LSFT_T(KC_SPC), RSFT_T(KC_ENT), TT(1), KC_RALT, KC_BSPC
     ),
 
     [1] = LAYOUT(
@@ -22,10 +22,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [2] = LAYOUT(
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______,        KC_SLEP, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
-        _______, _______, _______, _______, _______, _______,                          _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______,                          _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______,        _______, _______, _______, _______, _______, _______, _______,
-                                            _______, _______, _______,        _______, _______, _______, _______, _______
+        _______, _______, _______, _______, _______, _______,                          KC_7 ,   KC_8 ,   KC_9 , _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,                          KC_4 ,   KC_5 ,   KC_6 , _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,        _______, KC_1 ,   KC_2 ,   KC_3 , _______, _______, _______,
+                                            _______, _______, _______,        _______, _______, KC_0   , _______, _______
     ),
 
     [3] = LAYOUT(
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU), ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN) },
     [1] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS), ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-    [2] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS), ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
+    [2] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS), ENCODER_CCW_CW(QK_UNDERGLOW_MODE_NEXT, QK_UNDERGLOW_HUE_UP) },
     [3] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS), ENCODER_CCW_CW(KC_TRNS, KC_TRNS) }
 };
 #endif
