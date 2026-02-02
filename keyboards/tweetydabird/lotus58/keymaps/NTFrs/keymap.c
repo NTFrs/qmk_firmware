@@ -5,35 +5,35 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        QK_GESC,         KC_1, KC_2,    KC_3,    KC_4,  KC_5,        KC_MPLY,          KC_MUTE, KC_6,    KC_7,    KC_8, KC_9,      KC_0, KC_MINS,
-        KC_GRV ,         KC_Q, KC_W,    KC_E,    KC_R,  KC_T,                                   KC_Y,    KC_U,    KC_I, KC_O,      KC_P, KC_LBRC,
-        KC_LSFT,         KC_A, KC_S,    KC_D,    KC_F,  KC_G,                                   KC_H,    KC_J,    KC_K, KC_L,   KC_SCLN, KC_QUOT,
-        KC_LCTL, KC_Z, KC_X,    KC_C,    KC_V,  KC_B,        KC_PSCR,           LCTL(LSFT(KC_P)),  KC_N,    KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
-                                     KC_LGUI, KC_LALT, TT(2), LSFT_T(KC_SPC),  RCTL_T(KC_ENT), TT(1), KC_TAB, KC_BSPC
+        QK_GESC , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_MPLY      ,          KC_MUTE        , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , KC_MINS ,
+        KC_GRV  , KC_Q    , KC_W    , KC_E    , KC_R    , KC_T    ,                                           KC_Y    , KC_U    , KC_I    , KC_O    , KC_P    , KC_LBRC ,
+        KC_TAB  , KC_A    , KC_S    , KC_D    , KC_F    , KC_G    ,                                           KC_H    , KC_J    , KC_K    , KC_L    , KC_SCLN , KC_QUOT ,
+        KC_LCTL , KC_Z    , KC_X    , KC_C    , KC_V    , KC_B    , LALT(KC_TAB) ,          LCTL(LSFT(KC_P)), KC_N    , KC_M    , KC_COMM , KC_DOT  , KC_SLSH , KC_RCTL ,
+                            KC_LGUI , KC_LALT , TT(2)   , LSFT_T(KC_SPC)         ,          RSFT_T(KC_ENT)  , TT(1)   , KC_RALT , KC_BSPC 
     ),
 
     [1] = LAYOUT(
-        _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______,        AS_TOGG, KC_CAPS, KC_PSCR, KC_PGUP, KC_PGDN, KC_DEL , XXXXXXX,
-        _______, KC_DEL,  KC_UP,   KC_HOME, KC_END,  XXXXXXX,                          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        _______, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX, XXXXXXX,                          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        _______, KC_F10,  KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, _______,        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-                                   _______, _______, _______, _______,        _______, _______, _______, _______ 
+        _______ , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , _______      ,          AS_TOGG        , KC_CAPS , KC_PSCR , KC_PGUP , KC_PGDN , KC_DEL  , XXXXXXX ,
+        _______ , KC_HOME , KC_UP   , KC_END  , KC_DEL  , KC_EXLM ,                                           XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,
+        _______ , KC_LEFT , KC_DOWN , KC_RIGHT, KC_AT   , KC_AT   ,                                           XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,
+        _______ , KC_F10  , KC_F11  , KC_F12  , KC_DLR  , KC_PERC , _______      ,          _______        , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , _______ ,
+                            _______ , _______ , _______ , _______         ,          _______        , _______ , _______ , _______ 
     ),
 
     [2] = LAYOUT(
-        _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______,        KC_SLEP,   KC_F6, KC_F7,   KC_F8,   KC_F9,  KC_F10, KC_EQL ,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_7 , KC_8 ,   KC_9 , KC_UNDS, KC_LPRN, KC_RBRC,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_4 , KC_5 ,   KC_6 , KC_DQUO, KC_RPRN, KC_INS ,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,        _______,   KC_1 , KC_2 ,   KC_3 , KC_PIPE, KC_BSLS, _______,
-                                  _______, _______, _______, _______,         _______, _______, KC_0 , _______
+        _______ , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , _______      ,          KC_SLEP        , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_INS  ,
+        _______ , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,                                           KC_7    , KC_8    , KC_9    , KC_UNDS , KC_LPRN , KC_RBRC ,
+        _______ , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,                                           KC_4    , KC_5    , KC_6    , KC_EQL  , KC_RPRN , KC_ASTR ,
+        _______ , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , _______      ,          _______        , KC_1    , KC_2    , KC_3    , KC_PIPE , KC_BSLS , _______ ,
+                            _______ , _______ , _______ , _______         ,          _______        , _______ , KC_0    , _______ 
     ),
 
     [3] = LAYOUT(
-        QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, NK_TOGG, AC_TOGG, _______,        _______, XXXXXXX, XXXXXXX, XXXXXXX, UG_NEXT, UG_SATU, UG_TOGG,
-        QK_RBT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                          XXXXXXX, XXXXXXX, XXXXXXX,  UG_PREV, UG_SATD, RGB_M_P,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_CAPS,                          XXXXXXX, XXXXXXX, XXXXXXX, UG_HUEU, UG_VALU, RGB_M_B,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, UG_HUED, UG_VALD, RGB_M_R,
-                                   _______, _______, _______, _______,        _______, _______, _______, _______ 
+        QK_BOOT , XXXXXXX , XXXXXXX , XXXXXXX , NK_TOGG , AC_TOGG , _______      ,          _______        , XXXXXXX , XXXXXXX , XXXXXXX , UG_NEXT , UG_SATU , UG_TOGG ,
+        QK_RBT  , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,                                           XXXXXXX , XXXXXXX , XXXXXXX , UG_PREV , UG_SATD , RGB_M_P ,
+        XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_CAPS ,                                           XXXXXXX , XXXXXXX , XXXXXXX , UG_HUEU , UG_VALU , RGB_M_B ,
+        XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , _______      ,          _______        , XXXXXXX , XXXXXXX , XXXXXXX , UG_HUED , UG_VALD , RGB_M_R ,
+                            _______ , _______ , _______ , _______         ,          _______        , _______ , _______ , _______ 
     )
 };
 
@@ -73,21 +73,21 @@ static void print_status_narrow(void) {
         default:
             oled_write_P(PSTR("Undef"), false);
     }
-    
+
     oled_write_P(PSTR("\n"), false);
     led_t led_usb_state = host_keyboard_led_state();
     oled_write_ln_P(PSTR("Caps- lock"), led_usb_state.caps_lock);
-    
+
 #ifdef AUTO_SHIFT_ENABLE
 
     bool autoshift = get_autoshift_state();
     oled_advance_page(true);
     oled_write_P(PSTR("Auto-Shift"), autoshift);
     oled_advance_page(true);
-    
+
 #endif
 
-    
+
 }
 
 bool oled_task_user(void) {
